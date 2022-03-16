@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>데브시스터즈</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/pc.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 767px)">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <header id="main-header" class="container">
+        <h1>
+            <a href="./">
+            <img src="images/logo.svg" alt="데브시스터즈">
+            </a>
+        </h1>
+
+        <nav id="gnb">
+            <ul>
+                <li><a href="./">COMPANY</a></li>
+                <li><a href="#">OUR STORY</a></li>
+                <li><a href="#">PRODUCT</a></li>
+                <li><a href="#">IR</a></li>
+                <li><a href="#">PR</a></li>
+                <li><a href="#">CS</a></li>
+            </ul>
+        </nav>
+
+        <div class="right-menu">
+            <!-- PC용 메뉴 버튼 -->
+            <select name="family-link" id="family-link" class="pc-only">
+                <option value="">CAREER</option>
+                <option value="">link</option>
+                <option value="">link</option>
+                <option value="">link</option>
+            </select>
+            <button id="site-map-btn" class="pc-only">
+                <img src="images/toggle-btn.svg" alt="site map">
+            </button>
+            <!-- 모바일용 토글 버튼 -->
+            <button id="gnb-toggle-btn" class="mobile-only">
+                <img src="images/mobile-toggle-btn.svg" alt="main menu">
+            </button>
+        </div>
+    </header>
+
+    <!-- 슬라이더 컨테이터 -->
+    <div id="main-visual" class="swiper">
+        <div class="swiper-wrapper">
+            <!-- 슬라이더 콘텐츠 -->
+            <div class="swiper-slide s1">
+                <div class="title">
+                    <h2>COMAPNY</h2>
+                    <p>탁월한 기술, 서비스, 콘텐츠로 전 세계 고객에게 최고의 경험을 선사합니다.</p>
+                    <p class="pc-only"><a href="#" class="detail-btn">자세히보기</a></p>
+                </div>
+            </div>
+            <div class="swiper-slide s2">
+                <div class="title">
+                    <h2>Our Story</h2>
+                    <p>일과 제품에 대한 우리의 가치관 이야기</p>
+                    <p class="pc-only"><a href="#" class="detail-btn">자세히보기</a></p>
+                </div>
+            </div>
+            <div class="swiper-slide s3">
+                <div class="title">
+                    <h2>COMAPNY
+                        <p>전 세계 고객에게 최고의 경험을 선사하는 글로벌 서비스를 만듭니다</p>
+                    <p class="pc-only"><a href="#" class="detail-btn">자세히보기</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 하단 버튼 -->
+        <div class="swiper-pagination"></div>
+
+        <!-- 이동 화살표 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div><!-- swiper-->
+
+    <!-- 메인콘텐츠 -->
+    <main>
+        <section id="content1" class="container">
+            <img src="images/content1.jpg" alt="">
+            <div class="text-box">
+                <div class="text-box-inner">
+                    <h2>COOKIE RUN: OVENBREAK</h2>
+                    <p>최고의 러닝 게임
+                    </p>
+                    <a href="#" class="detail-btn">게임 다운로드</a>
+                </div>
+            </div>  
+        </section>
+        <section id="content2" class="container">
+            <img src="images/content2.jpg" alt="">
+            <div class="text-box">
+                <div class="text-box-inner">
+                    <h2>COOKIE RUN: PUZZLE WORLD</h2>
+                    <p>쿠키들의 모험이 가득한 3-Match 퍼즐 게임
+                    </p>
+                    <a href="#" class="detail-btn">게임 다운로드</a>
+                </div>
+            </div>  
+        </section>
+        <section id="content3" class="container">
+            <img src="images/content3.jpg" alt="">
+            <div class="text-box">
+                <div class="text-box-inner">
+                    <h2>COOKIE RUN: KINGDOM</h2>
+                    <p>처음 ‘맛’나는 소셜 RPG
+                    </p>
+                    <a href="#" class="detail-btn">게임 다운로드</a>
+                </div>
+            </div>  
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <div class="text-box">
+                    <h2>쿠키런: 킹덤의<br>
+                        글로벌 3천만 왕국 시대</h2>
+                    <p>쿠키런: 킹덤이 이룬 글로벌 성과 스토리</p>
+                    <a href="#" class="detail-btn">STORY 보러가기</a>
+                </div>  
+            </div><!-- container -->
+        </section>
+    </main>
+
+    <footer id="main-footer">
+        <div class="container">
+            <div class="menu-box">
+                <ul class="footer-menu">
+                    <li><a href="#"><strong>개인정보처리방침</strong></a><span>|</span></li>
+                    <li><a href="#">게임이용약관</a></li>
+                </ul>
+                <ul class="sns-group">
+                    <li><a href="#">DevTech</a></li>
+                    <li><a href="#">페이스북</a></li>
+                    <li><a href="#">트위터</a></li>
+                    <li><a href="#">링크드인</a></li>
+                </ul>
+            </div><!-- menu-box -->
+            <div id="line"></div>
+            <div class="footer-info">
+                <img src="images/logo.svg" alt="데브" class="pc-only">
+                <img src="images/mobile-logo.svg" alt="" class="mobile-only">
+                <div class="footer-info-text">
+                    <p class="pc-footer">데브시스터즈(주)<span>|</span>(06019) 서울특별시 강남구 도산대로 327<span>|</span>전화 : 02-2148-0750<span>|</span>팩스 : 02-2148-0584
+                    <br>© 2022 Devsisters Corp. All Rights Reserved
+                    </p>
+                    <p class="mobile-footer">데브시스터즈 (주)<br>
+                        (06019) 서울특별시 강남구 도산대로 327  <br>
+                        대표전화 : 02-2148-0750
+                    <br><span>© 2022 Devsisters Corp. All Rights Reserved</span></p>
+                </div> 
+                <a href="#" class="top-btn pc-only"><img src="images/top-btn.svg" alt="위로가기"></a>
+                <a href="#" class="top-btn mobile-only"><img src="images/mobile-top-btn.svg" alt=""></a>
+            </div><!-- footer-info -->
+        </div><!-- container -->
+    </footer>
+
+    <!-- 사이트맵 레이어 팝업창 -->
+        <div class="sitemap-modal pc-only">
+            <ul>
+                <li><a href="#">COMPANY</a>
+                    <ul>
+                        <li><a href="#">미션/핵심가치</a></li>
+                        <li><a href="#">HISTORY</a></li>
+                        <li><a href="#">CI</a></li>
+                        <li><a href="#">관계사</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#">윤리강령</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">OUR STORY</a>
+                    <ul>
+                        <li><a href="#">STORY</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">PRODUCT</a>
+                    <ul>
+                        <li><a href="#">쿠키런 IP</a></li>
+                        <li><a href="#">게임</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">IR</a>
+                    <ul>
+                        <li><a href="#">공시정보</a></li>
+                        <li><a href="#">IR자료</a></li>
+                        <li><a href="#">공고사항</a></li>
+                        <li><a href="#">주가정보</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">PR</a>
+                    <ul>
+                        <li><a href="#">보도자료</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">CS</a>
+                    <ul>
+                        <li><a href="#">고객지원</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button id="sitemap-modal-close">
+            <img src="images/carbon_close.svg" alt="사이트맵 닫기">
+            </button>
+        </div><!-- site map modal -->
+
+    <script src="js/swiper.js"></script>
+</body>
+</html>
